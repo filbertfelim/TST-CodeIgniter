@@ -66,3 +66,175 @@ INFO - 2023-12-15 08:06:54 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-15 08:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-15 08:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-15 08:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-15 09:05:29 --> 22 : The requested URL returned error: 500
+in SYSTEMPATH\HTTP\CURLRequest.php on line 693.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(693): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(387): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(145): CodeIgniter\HTTP\CURLRequest->send('get', 'http://localhost:8081/restoranAPI/""')
+ 4 APPPATH\Controllers\HomeController.php(14): CodeIgniter\HTTP\CURLRequest->request('get', 'http://localhost:8081/restoranAPI/""', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\tst\\TST-CodeIgniter\\public\\index.php')
+INFO - 2023-12-15 09:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-15 09:05:36 --> 22 : The requested URL returned error: 500
+in SYSTEMPATH\HTTP\CURLRequest.php on line 693.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(693): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(387): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(145): CodeIgniter\HTTP\CURLRequest->send('get', 'http://localhost:8081/restoranAPI/""')
+ 4 APPPATH\Controllers\HomeController.php(14): CodeIgniter\HTTP\CURLRequest->request('get', 'http://localhost:8081/restoranAPI/""', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\tst\\TST-CodeIgniter\\public\\index.php')
+INFO - 2023-12-15 09:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-15 09:06:48 --> 22 : The requested URL returned error: 500
+in SYSTEMPATH\HTTP\CURLRequest.php on line 693.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(693): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(387): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(145): CodeIgniter\HTTP\CURLRequest->send('get', 'http://localhost:8081/restoranAPI/""')
+ 4 APPPATH\Controllers\HomeController.php(14): CodeIgniter\HTTP\CURLRequest->request('get', 'http://localhost:8081/restoranAPI/""', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\tst\\TST-CodeIgniter\\public\\index.php')
+INFO - 2023-12-15 09:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-15 09:06:56 --> 22 : The requested URL returned error: 500
+in SYSTEMPATH\HTTP\CURLRequest.php on line 693.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(693): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(387): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(145): CodeIgniter\HTTP\CURLRequest->send('get', 'http://localhost:8081/restoranAPI/""')
+ 4 APPPATH\Controllers\HomeController.php(14): CodeIgniter\HTTP\CURLRequest->request('get', 'http://localhost:8081/restoranAPI/""', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\tst\\TST-CodeIgniter\\public\\index.php')
+INFO - 2023-12-15 09:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-15 09:06:57 --> 22 : The requested URL returned error: 500
+in SYSTEMPATH\HTTP\CURLRequest.php on line 693.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(693): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(387): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(145): CodeIgniter\HTTP\CURLRequest->send('get', 'http://localhost:8081/restoranAPI/""')
+ 4 APPPATH\Controllers\HomeController.php(14): CodeIgniter\HTTP\CURLRequest->request('get', 'http://localhost:8081/restoranAPI/""', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\tst\\TST-CodeIgniter\\public\\index.php')
+INFO - 2023-12-15 09:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-15 09:08:35 --> 22 : The requested URL returned error: 500
+in SYSTEMPATH\HTTP\CURLRequest.php on line 693.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(693): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(387): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(145): CodeIgniter\HTTP\CURLRequest->send('get', 'http://localhost:8081/restoranAPI/""')
+ 4 APPPATH\Controllers\HomeController.php(14): CodeIgniter\HTTP\CURLRequest->request('get', 'http://localhost:8081/restoranAPI/""', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\tst\\TST-CodeIgniter\\public\\index.php')
+INFO - 2023-12-15 09:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-15 10:01:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sql12668373', 3306, '', 0)
+#1 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT `Pemesan...', Array, false)
+#4 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\app\Models\Pemesanan.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\app\Controllers\PemesananController.php(14): App\Models\Pemesanan->getDataPemesananRestoran('1')
+#6 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(942): App\Controllers\PemesananController->index('1')
+#7 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemesananController))
+#8 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT `Pemesan...', Array, false)
+#3 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\app\Models\Pemesanan.php(29): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\app\Controllers\PemesananController.php(14): App\Models\Pemesanan->getDataPemesananRestoran('1')
+#5 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(942): App\Controllers\PemesananController->index('1')
+#6 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemesananController))
+#7 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#10 {main}
+CRITICAL - 2023-12-15 10:01:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT `Pemesanan`.`id`, `Pemesanan`.`tanggalPemesanan` as `orderDate`, `Pemesanan`.`status`, sum(DetailPemesanan.harga * DetailPemesanan.jumlah) as totalHarga
+FROM `Pemesanan`
+JOIN `DetailPemesanan` ON `Pemesanan`.`id` = `DetailPemesanan`.`orderId`
+WHERE `Pemesanan`.`restoranId` = :Pemesanan.restoranId:
+GROUP BY `Pemesanan`.`id`
+ORDER BY `Pemesanan`.`tanggalPemesanan` DESC, `Pemesanan`.`status` DESC', [...], false)
+ 3 APPPATH\Models\Pemesanan.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\PemesananController.php(14): App\Models\Pemesanan->getDataPemesananRestoran('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PemesananController->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemesananController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\tst\\TST-CodeIgniter\\public\\index.php')
+ERROR - 2023-12-15 10:01:23 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sql12668373', 3306, '', 0)
+#1 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT `Pemesan...', Array, false)
+#4 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\app\Models\Pemesanan.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\app\Controllers\PemesananController.php(14): App\Models\Pemesanan->getDataPemesananRestoran('1')
+#6 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(942): App\Controllers\PemesananController->index('1')
+#7 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemesananController))
+#8 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT `Pemesan...', Array, false)
+#3 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\app\Models\Pemesanan.php(29): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\app\Controllers\PemesananController.php(14): App\Models\Pemesanan->getDataPemesananRestoran('1')
+#5 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(942): App\Controllers\PemesananController->index('1')
+#6 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemesananController))
+#7 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ASUS\Documents\tst\TST-CodeIgniter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#10 {main}
+CRITICAL - 2023-12-15 10:01:23 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT `Pemesanan`.`id`, `Pemesanan`.`tanggalPemesanan` as `orderDate`, `Pemesanan`.`status`, sum(DetailPemesanan.harga * DetailPemesanan.jumlah) as totalHarga
+FROM `Pemesanan`
+JOIN `DetailPemesanan` ON `Pemesanan`.`id` = `DetailPemesanan`.`orderId`
+WHERE `Pemesanan`.`restoranId` = :Pemesanan.restoranId:
+GROUP BY `Pemesanan`.`id`
+ORDER BY `Pemesanan`.`tanggalPemesanan` DESC, `Pemesanan`.`status` DESC', [...], false)
+ 3 APPPATH\Models\Pemesanan.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\PemesananController.php(14): App\Models\Pemesanan->getDataPemesananRestoran('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PemesananController->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemesananController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\tst\\TST-CodeIgniter\\public\\index.php')
+INFO - 2023-12-15 10:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 10:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 10:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
