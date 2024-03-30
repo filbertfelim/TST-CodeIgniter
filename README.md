@@ -1,107 +1,84 @@
-# CodeIgniter 4 Development
+# SnapBite
+Merupakan sebuah sistem pemesanan delivery yang menampilkan berbagai pilihan restoran beserta daftar makanan yang disediakan oleh masing-masing restoran. Data restoran beserta data makanannya tersebut diperoleh dari [domain sistem manajemen restoran](https://github.com/filbertfelim/TST-SistemRestoran). Sistem akan mengolah data lokasi restoran dengan data lokasi pelanggan untuk menampilkan jarak antara lokasi restoran dengan lokasi pelanggan. Sistem ini juga menyediakan pilihan bagi pelanggan untuk melakukan filter pencarian restoran berdasarkan kategori kalori. Pelanggan dapat menambahkan menu yang ingin dipesannya dari suatu restoran ke keranjang pesanan. Sistem akan melakukan perhitungan biaya tambahan yang meliputi biaya pengantaran dan biaya pemesanan berdasarkan jarak antara lokasi restoran dengan lokasi pelanggan dan waktu pemrosesan makanan yang dipesan oleh pelanggan, yang merupakan core domain dari sistem ini. Berdasarkan harga makanan dan perhitungan biaya tambahan tersebut, sistem dapat menampilkan total harga yang harus dibayarkan oleh pelanggan. Sistem hanya menerima satu metode pembayaran, yaitu pembayaran digital menggunakan saldo yang dimiliki oleh pelanggan pada platform pemesanan delivery tersebut. Pemesanan hanya dapat dilakukan apabila saldo yang dimiliki oleh pelanggan mencukupi. Ketika pelanggan melakukan pemesanan, saldo tersebut akan secara otomatis berkurang. Sistem ini akan mencatat data pemesanan makanan tersebut, yang dapat diakses oleh [domain sistem manajemen restoran](https://github.com/filbertfelim/TST-SistemRestoran) terkait untuk mengetahui rekapitulasi pemesanan.
 
-[![PHPUnit](https://github.com/codeigniter4/CodeIgniter4/workflows/PHPUnit/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-phpunit.yml)
-[![PHPStan](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-phpstan.yml/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-phpstan.yml)
-[![Psalm](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-psalm.yml/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-psalm.yml)
-[![Coverage Status](https://coveralls.io/repos/github/codeigniter4/CodeIgniter4/badge.svg?branch=develop)](https://coveralls.io/github/codeigniter4/CodeIgniter4?branch=develop)
-[![Downloads](https://poser.pugx.org/codeigniter4/framework/downloads)](https://packagist.org/packages/codeigniter4/framework)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/codeigniter4/CodeIgniter4)](https://packagist.org/packages/codeigniter4/framework)
-[![GitHub stars](https://img.shields.io/github/stars/codeigniter4/CodeIgniter4)](https://packagist.org/packages/codeigniter4/framework)
-[![GitHub license](https://img.shields.io/github/license/codeigniter4/CodeIgniter4)](https://github.com/codeigniter4/CodeIgniter4/blob/develop/LICENSE)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/codeigniter4/CodeIgniter4/pulls)
-<br>
+## Fitur
+1. Sistem dapat melakukan autentikasi pengguna  
+2. Sistem dapat menampilkan berbagai pilihan restoran beserta informasi kalori dan jarak
+3. Sistem dapat melakukan filter restoran berdasarkan kategori kalori
+4. Sistem dapat menampilkan daftar makanan yang tersedia pada restoran yang dipilih
+5. Sistem dapat memasukkan makanan ke dalam keranjang pesanan
+6. Sistem menyediakan pengelolaan makanan dalam keranjang pesanan
+7. Sistem dapat menghitung dan menampilkan total harga pesanan
+8. Sistem dapat menampilkan saldo pengguna
+9. Sistem mencatat data pemesanan pengguna
 
-## What is CodeIgniter?
+## Teknologi
+**Bahasa pemograman** : PHP
+***Framework*** : CodeIgniter 4 
+***Database*** : MySQL
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## API Endpoint
 
-This repository holds the source code for CodeIgniter 4 only.
-Version 4 is a complete rewrite to bring the quality and the code into a more modern version,
-while still keeping as many of the things intact that has made people love the framework over the years.
+| HTTP *Method*      | *Endpoint* | *Request body example*     | *Response body example*      | Description |
+| ---        |    ----   |          --- |---        |    ----   |
+| GET      |`/pemesananAPI/(:restoranID)`       | ```{“username”: string ,“password”: string}``` | ```{“id”: int,“orderDate”: string, “totalHarga”: int} [] | null```|Mengembalikan data pemesanan berdasarkan ID restoran yang diminta   |
+| GET   | `/detailPemesananAPI/(:orderID)`| ```{“username”: string ,“password”: string}```      | ```{“id”: int,“namaMakanan”: string, “harga”: int,“jumlah”: int,“hargaPesanan”: int} | null```| Mengembalikan data detail pemesanan berdasarkan ID pemesanan yang diminta        |
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+#### 1. /pemesananAPI/(:restoranID)
+Mengembalikan data pemesanan berdasarkan ID restoran yang diminta
 
-### Documentation
+HTTP *method* : **GET**
 
-The [User Guide](https://codeigniter4.github.io/userguide/) is the primary documentation for CodeIgniter 4.
+*Request body example*
+```json
+{
+   “username”: string, 
+   “password” : string
+}
+```
+*Response body example*
+```json
+{
+   “id”: int,
+   “orderDate”: string, 
+   “totalHarga”: int
+} [] | null
+```
 
-The current **in-progress** User Guide can be found [here](https://codeigniter4.github.io/CodeIgniter4/).
-As with the rest of the framework, it is a work in progress, and will see changes over time to structure, explanations, etc.
+#### 2. /detailPemesananAPI/(:orderID)
+Mengembalikan data detail pemesanan berdasarkan ID pemesanan yang diminta
 
-You might also be interested in the [API documentation](https://codeigniter4.github.io/api/) for the framework components.
+HTTP *method* : **GET**
 
-## Important Change with index.php
+*Request body example*
+```json
+{
+   “username”: string, 
+   “password” : string
+}
+```
+*Response body example*
+```json
+{
+   “id”: int,
+   “namaMakanan”: string, 
+   “harga”: int,
+   “jumlah”: int,
+   “hargaPesanan”: int
+} | null
+```
 
-index.php is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-CodeIgniter is developed completely on a volunteer basis. As such, please give up to 7 days
-for your issues to be reviewed. If you haven't heard from one of the team in that time period,
-feel free to leave a comment on the issue so that it gets brought back to our attention.
-
-We use GitHub issues to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-If you raise an issue here that pertains to support or a feature request, it will
-be closed! If you are not sure if you have found a bug, raise a thread on the forum first -
-someone else may have encountered the same thing.
-
-Before raising a new GitHub issue, please check that your bug hasn't already
-been reported or fixed.
-
-We use pull requests (PRs) for CONTRIBUTIONS to the repository.
-We are looking for contributions that address one of the reported bugs or
-approved work packages.
-
-Do not use a PR as a form of feature request.
-Unsolicited contributions will only be considered if they fit nicely
-into the framework roadmap.
-Remember that some components that were part of CodeIgniter 3 are being moved
-to optional packages, with their own repository.
-
-## Contributing
-
-We **are** accepting contributions from the community! It doesn't matter whether you can code, write documentation, or help find bugs,
-all contributions are welcome.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/contributing/README.md).
-
-CodeIgniter has had thousands on contributions from people since its creation. This project would not be what it is without them.
-
-<a href="https://github.com/codeigniter4/CodeIgniter4/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=codeigniter4/CodeIgniter4" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> **Warning**
-> The end of life date for PHP 7.4 was November 28, 2022. If you are
-> still using PHP 7.4, you should upgrade immediately. The end of life date
-> for PHP 8.0 will be November 26, 2023.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-## Running CodeIgniter Tests
-
-Information on running the CodeIgniter test suite can be found in the [README.md](tests/README.md) file in the tests directory.
+## Antarmuka Pengguna
+### Sign In Page
+![](https://lh7-us.googleusercontent.com/F8vuqjdsQnaD6SqGo0V-hCygUXdWtKg7JMnm3QVmuZRVCMM7ktCDIL51x8N4h6sgU4jrAsRrsFcW6MizjdpWcLhs6cP2PDpoaNhIA1j-olO319JfrqToQQda_oErraxA5I3bJ-l5B8NWc8pTtewHAD8)
+### Restaurant Search Page
+![](https://lh7-us.googleusercontent.com/syZ0Mwu66289b3FtfA5Ntmr08esUNhrdQlxBQSeGXkQq6QSp7ncvzNaBABWeFMEHuUvWGX7oLYMos4nM3oXTP6X9l-t-2Zkdo1VEsnM0O9dxuDlbEgRjWUC9Do_Fb6TyKNPXF9BAgMJ9T0aMKaJMUCQ)
+### Restaurant Menu Search Page
+![](https://lh7-us.googleusercontent.com/-G5f7--6lQcx3MLwNGH8VdTyIS9XKBfOb2BQlsmCzwY4iC-Ssb_LhLyk1I9u1Ruq_NOO9W4zhQN-cuomdjoq6FuFwQLeJijKorciOxSdPJfN-CEYXY6ascHs-DUcD4IUUL6AnKSz8PJAwJQI-3zQmNY)
+### Orders Page
+#### Tanpa pesanan
+![](https://lh7-us.googleusercontent.com/1siBzXAGoCNEJJ9SPpKw0Dgo7fhiUCHwLw27ITRm9WcKZTyDBNe9F_bSNjxhke_s1sB8xeaiGrs9qNTNXQKXliP3IjjkRmFWMiwCtob7w0Xnt3WtUNqi5AvKjD2S_h2ZTMFxIuR9ofFBRr5-H8Hl-LU)
+#### Dengan pesanan![](https://lh7-us.googleusercontent.com/Kge21unA6w1WhY37REeSL_5m6W9O0jt2kU-kC2FcotmnDHCRXv--YvBZdr_aeoSmJfzCKWnqUMCnTcFN2YqZ0BvXxf19uR66p-p_uWjokzov02XtiqUShK_DS-txEJdTDY-4V0k01S9ub-h6-kbTVpI)
+## Database
+Berikut skema ***database*** yang digunakan dalam sistem : ![](https://lh7-us.googleusercontent.com/W9ffIPl1-uaT6tA7csJibqVSC1LNyPAUUWo3NKbigzojMUQUtwBBj0_0LKCf_Wpu9drzXduh9MERmTDF--URDyfxS1iqwAa6X0Cdqn8v3vn9zT8oE42NUHGWbVlkZgaei-uazbNWqHxbAdO3QRffIf4)
