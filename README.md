@@ -18,26 +18,20 @@ Merupakan sebuah sistem pemesanan delivery yang menampilkan berbagai pilihan res
 ***Database*** : MySQL
 
 ## API Endpoint
-
-| HTTP *Method*      | *Endpoint* | *Request body example*     | *Response body example*      | Description |
-| ---        |    ----   |          --- |---        |    ----   |
-| GET      |`/pemesananAPI/(:restoranID)`       | ```{“username”: string ,“password”: string}``` | ```{“id”: int,“orderDate”: string, “totalHarga”: int} [] | null```|Mengembalikan data pemesanan berdasarkan ID restoran yang diminta   |
-| GET   | `/detailPemesananAPI/(:orderID)`| ```{“username”: string ,“password”: string}```      | ```{“id”: int,“namaMakanan”: string, “harga”: int,“jumlah”: int,“hargaPesanan”: int} | null```| Mengembalikan data detail pemesanan berdasarkan ID pemesanan yang diminta        |
-
 #### 1. /pemesananAPI/(:restoranID)
 Mengembalikan data pemesanan berdasarkan ID restoran yang diminta
 
 HTTP *method* : **GET**
 
 *Request body example*
-```json
+```jsonc
 {
    “username”: string, 
    “password” : string
 }
 ```
 *Response body example*
-```json
+```jsonc
 {
    “id”: int,
    “orderDate”: string, 
@@ -51,14 +45,14 @@ Mengembalikan data detail pemesanan berdasarkan ID pemesanan yang diminta
 HTTP *method* : **GET**
 
 *Request body example*
-```json
+```jsonc
 {
    “username”: string, 
    “password” : string
 }
 ```
 *Response body example*
-```json
+```jsonc
 {
    “id”: int,
    “namaMakanan”: string, 
